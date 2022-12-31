@@ -1,0 +1,66 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body 
+{
+    background:linear-gradient(to right, rgba(0, 200, 255, 0.687), purple);
+
+}
+
+.container 
+{
+    margin: 2rem;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: minmax(7rem, auto) repeat(5,6rem);
+}
+
+.output
+{
+    grid-column: 1/-1;
+    background-color: rgb(51, 51, 51);
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    flex-direction: column;
+    padding: .85rem;
+    word-break: break-all;
+    word-wrap: break-word;
+}
+.operandOne 
+{
+    font-size: 1.5rem;
+    color: rgb(220, 220, 220);
+}
+.operandTwo 
+{
+    font-size: 2rem;
+}
+
+
+.spanTwo 
+{
+    grid-column: span 2;
+}
+
+button
+{
+    border: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.233);
+    border-right: 1px solid rgba(255, 255, 255, 0.343);
+    font-size: 1.25rem;
+    font-weight: bold;
+    background:linear-gradient(rgba(255, 255, 255, 0.281), rgba(255, 255, 255, 0.134));
+    backdrop-filter: blur(10px);
+    transition: all .05s ease;
+}
+
+button:hover, button:focus
+{
+    background-color: rgba(255, 255, 255, 0.644);
+}
+
